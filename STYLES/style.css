@@ -1,0 +1,118 @@
+.navbar {
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+    display: inline-block;
+    margin-top: 0px;
+    padding: 20px 0;
+    width: 100%;
+    height: 90px;
+    background-color: rgb(209, 159, 209);
+    position: sticky;
+}
+
+.navbar-link{
+    float: right;
+    list-style: none;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    padding: 0 80px;
+    max-width: 1300px;
+    margin: auto;
+    
+}
+
+
+.navbar-links li {
+    display: inline-block;
+    list-style: none;
+}
+
+.navbar-link a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 20px;
+    text-transform: uppercase;
+    font-size: 26px;
+    display: inline;
+    float: center;
+    list-style: none;
+}
+
+.navbar-link a:hover {color: yellow;}
+
+.background img{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    display: block;
+    height: 700px;
+    width: 1550px;
+}
+
+.centered p {
+    text-align: center;
+    font-size: 50px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    color: black;
+    font-family: Gabriola;
+}
+
+.centered span{
+    font-size: 72px;
+    color: black;
+    font-family: Gabriola;
+}
+
+.home{color: rgba(255, 255, 255, 0.705);}
+
+.centered h1 {
+    text-align: center;
+   margin-top: 20px;
+   color: black;
+   font-family: Gabriola;
+   font-size: 72px;
+   margin-right: 90px;
+}
+
+.centered h3 {
+    text-align: center;
+    font-size: 60px;
+    margin-top: 20px;
+    color: black;
+    font-family: Gabriola;
+}
+.centered{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: mymove 3s infinite;
+    animation-timing-function: ease-in;
+}
+
+@keyframes mymove {
+    from {left: 0px;}
+    to {left: 650px}
+}
+
+*{
+    overflow: hidden;
+}
+.responsive{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 600px){
+    div.centered{
+        font-size: 30px;
+    }
+    
+}
