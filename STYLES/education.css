@@ -156,15 +156,16 @@ h1 {
 }
 
 footer{
-    background-color: rgb(209, 159, 209);
-    color: black;
+    background-color: black;
+    color: white;
     position: relative;
     font-family: Gabriola;
     font-size: 40px;
+    padding-top: 20px;
 }
 
 footer a{
-    color: black;
+    color: white;
     font-size: 22px;
     justify-content: space-between;
     padding-left: 10px;

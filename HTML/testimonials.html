@@ -21,18 +21,53 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <script>"https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"</script>
 </head>
 <body>
-    <nav class="navbar">
-        <ul class="navbar-link">
-          <li><a href="../Index.html">Home</a></li>
-          <li><a href="./about.html">About</a></li>
-          <li><a href="./education.html">Education</a></li>
-          <li><a href="./skills.html">Skills</a></li>
-          <li><a href="./projects.html">Projects</a></li>
-          <li><a href="./contact.html">Contacts</a></li>
-        </ul>
-    </nav>
+    <nav class="navbar navbar-dark bg-dark fixed-top pt-3">
+        <div class="container-fluid">
+          <a class="navbar-brand fs-3" href="#">Sibabalwe</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Sibabalwe Mafestire</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="../Index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./about.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./education.html">Education</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Work
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="./skills1.html">Skills</a></li>
+                    <li><a class="dropdown-item" href="./projects.html">Projects</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="./testimonials.html">Testimonials</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./contact.html">Contact Me</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
 
 
       <div class="container">
@@ -45,7 +80,7 @@
                             </div>
                             <div class="flip-card-back">
                                 <h1>Ryan Thomas</h1>
-                                <p>Web developer</p>
+                                <p>Lecture</p>
                                 <p>Sibabalwe is an individual who rarely lets an issue stand in her way of getting the job done and
                                 getting it done correctly. She is one who strives for perfection in her work and is always willing and
                                 ready to assist her peers. She has a great sense of humor and a bubbly personality.</p>
@@ -61,7 +96,7 @@
                             </div>
                             <div class="flip-card-back">
                                 <h1>Kelebogile Nobomvu</h1>
-                                <p>Web developer</p>
+                                <p>Colleague</p>
                                 <p>Sibabalwe is a humble and loving person who is always keen on helping others and she is a hard worker.</p>
                             </div>
                         </div>  
@@ -71,11 +106,11 @@
                     <div class="flip-card3">
                         <div class="flip-card-inner">
                             <div class="flip-card-front">
-                                <img src=".." width= "300" height="300" alt="avatar" >
+                                <img src="../images/WhatsApp Image 2022-11-04 at 13.53.53.jpeg" width= "300" height="300" alt="avatar" >
                             </div>
                             <div class="flip-card-back">
                                 <h1>Kauthar Brandt</h1>
-                                <p>Web developer</p>
+                                <p>Colleague</p>
                                 <p>Testimonial:Seaba is a very hard-working and determined individual when facing challenges. This attitude would prove beneficial in personal or group projects. She's caring and supportive, which would be helpful in a stressed environment.</p>
                             </div>
                         </div>  
@@ -92,7 +127,7 @@
                             </div>
                             <div class="flip-card-back">
                                 <h1>Buhle Qampi</h1>
-                                <p>Web developer</p>
+                                <p>Colleague</p>
                                 <p>Siba is a great teamplayer and always helps other collegues. Her developer skills are exceptional and necessary for any workplace.</p>
                             </div>
                         </div>  
@@ -106,7 +141,7 @@
                             </div>
                             <div class="flip-card-back">
                                 <h1>Aliyah Du Toit</h1>
-                                <p>Web developer</p>
+                                <p>Colleague</p>
                                 <p>Seaba is a wonderful, caring, compassionate person. She goes the extra mile for anyone and is committed to her goals.</p>
                             </div>
                         </div>  
@@ -120,7 +155,7 @@
                             </div>
                             <div class="flip-card-back">
                                 <h1>Deno Rautenbach</h1>
-                                <p>Web developer</p>
+                                <p>Colleague</p>
                                 <p>Sibabalwe always engulfs you in her rays of happiness. Not just a magnet of unparalleled jubilation thought, she's also a genious with a burning passion to learn. A light in the struggles of coding</p>
                             </div>
                         </div>  
@@ -142,8 +177,8 @@
               <a href="about.html">About</a>
             </div>
             <div class="col">
-              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://www.facebook.com/profile.php?id=100008444593180"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="wwww.instagram.com/seaba_raven"><i class="fa-brands fa-instagram"></i></a>
               <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
               <a href="#"><i class="fa-brands fa-twitter"></i></a>
               <a href="#"><i class="fa-brands fa-github"></i></a>
@@ -153,13 +188,14 @@
           <div class="row">
             <div class="col">
               <a href="education.html">Education</a>
-              <a href="skills.html">Skills</a>
+              <a href="skills1.html">Skills</a>
             </div>
             <div class="col"><a href="contact.html">Contact Me</a></div>
           </div>
           <div class="row">
             <div class="col">
               <a href="projects.html">Projects</a> <a href="./testimonials.html">Testimonials</a>
+              <div class="cop" style="font-size: 20px; text-align: center;">&copy; Sibabalwe. Copy Rights all reserved 2022</div>
             </div>
           </div>
         </div>
