@@ -51,9 +51,9 @@
 }
 .centered{
     position: relative;
-    top: 50%;
+    /*top: -20%;*/
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -130%);
     animation: mymove 1s ;
     animation-timing-function: ease-in;
 }
@@ -72,9 +72,16 @@
     height: auto;
 }
 
+@media screen and (max-width: 300px){
+    .centered{
+        font-size: 16px;
+    }
+}
+
 @media screen and (max-width: 600px){
-    div.centered{
-        font-size: 30px;
+    .centered{
+        font-size: px;
+        
     }
     
     .navbar.responsive {

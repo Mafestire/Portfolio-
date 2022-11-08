@@ -16,24 +16,30 @@
 }
 
 .centered img{
-    width: 50%;
-    height: 50%;
+    width: 40%;
+    height: 55%;
     border-radius: 20%;
     display: inline-block;
     margin-left: 90px;
     position: relative;
-    margin-top: 50px;
+    margin-top: 30px;
     transform: translateY(-10%);
 }
 
 .centered p {
     text-align: center;
-    font-size: 42px;
+    font-size: 38px;
     justify-content: center;
     align-items: center;
     margin-top: 10px;
     color: black;
     background-color: rgb(248, 246, 243);
+    background: rgba( 255, 255, 255, 0.25 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
     font-family: Gabriola;
 }
 
@@ -50,21 +56,33 @@
    margin-top: 20px;
    color: black;
    background-color: rgb(248, 246, 243);
+   background: rgba( 255, 255, 255, 0.25 );
+   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+   backdrop-filter: blur( 4px );
+   -webkit-backdrop-filter: blur( 4px );
+   border-radius: 10px;
+   border: 1px solid rgba( 255, 255, 255, 0.18 );
    font-family: Gabriola;
-   font-size: 52px;
+   font-size: 46px;
 }
 
 .centered h5 {
     text-align: center;
-    font-size: 52px;
+    font-size: 42px;
     margin-top: 10px;
     color: black;
     background-color: rgb(248, 246, 243);
+    background: rgba( 255, 255, 255, 0.25 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 6px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
     font-family: Gabriola;
 }
 .centered{
     position: absolute;
-    top: 40%;
+    top: 44%;
     transform: translateY(-26%);
 }
 
@@ -121,6 +139,7 @@ footer a:hover{
     .about-table {
         height: 300px;
     }
+
 }
 
 @media screen and (max-width: 600px){
