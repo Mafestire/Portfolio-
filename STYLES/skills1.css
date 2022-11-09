@@ -24,10 +24,6 @@
     font-family: Gabriola;
 }
 
-.Skills {
-    
-}
-
 .centered{
     position: absolute;
     top: 40%;
@@ -63,9 +59,14 @@ footer a:hover{
 }
 
 
-@media screen and (max-width: 600px){
-    div.centered{
-        font-size: 30px;
+@media (width <= 576px) {
+    .centered p {
+        text-align: center;
+        font-size: 22px;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+        color: black;
+        font-family: Gabriola;
     }
-    
 }

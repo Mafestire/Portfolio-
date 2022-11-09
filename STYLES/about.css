@@ -1,170 +1,145 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+nav,
+.background,
+footer {
+  grid-column: 1 / 4;
+}
+.background {
+  background: url("../images/flower.jpg") no-repeat center center;
+  background-size: cover;
+  background-position: center;
 }
 
-
-.background img{
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    background-size: cover;
-    position: relative;
-    display: block;
-    height: 760px;
-    width: 1590px;
+.background img {
+  width: 290px;
+  height: 65%;
+  border-radius: 20%;
+    margin-left: 590px;
+  transform: translateY(-5%);
 }
 
-.centered img{
-    width: 40%;
-    height: 55%;
-    border-radius: 20%;
-    display: inline-block;
-    margin-left: 90px;
-    position: relative;
-    margin-top: 30px;
-    transform: translateY(-10%);
+.background p {
+  text-align: center;
+  font-size: 38px;
+  justify-content: center;
+  align-items: center;
+  width: 450px;
+  margin-top: 10px;
+  margin-left: 500px;
+  color: black;
+  background-color: rgb(248, 246, 243);
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  font-family: Gabriola;
 }
 
-.centered p {
-    text-align: center;
-    font-size: 38px;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10px;
-    color: black;
-    background-color: rgb(248, 246, 243);
-    background: rgba( 255, 255, 255, 0.25 );
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 4px );
--webkit-backdrop-filter: blur( 4px );
-border-radius: 10px;
-border: 1px solid rgba( 255, 255, 255, 0.18 );
-    font-family: Gabriola;
+.background span {
+  font-size: 72px;
+  color: black;
+  font-family: Gabriola;
 }
 
-.centered span{
-    font-size: 72px;
-    color: black;
-    font-family: Gabriola;
+.home {
+  color: rgb(248, 246, 243);
 }
 
-.home{color: rgb(248, 246, 243);}
-
-.centered h6 {
-    text-align: center;
-   margin-top: 20px;
-   color: black;
-   background-color: rgb(248, 246, 243);
-   background: rgba( 255, 255, 255, 0.25 );
-   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-   backdrop-filter: blur( 4px );
-   -webkit-backdrop-filter: blur( 4px );
-   border-radius: 10px;
-   border: 1px solid rgba( 255, 255, 255, 0.18 );
-   font-family: Gabriola;
-   font-size: 46px;
+.background h6 {
+  text-align: center;
+  margin-top: 20px;
+  margin-left: 500px;
+  color: black;
+  width: 450px;
+  background-color: rgb(248, 246, 243);
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  font-family: Gabriola;
+  font-size: 46px;
 }
 
-.centered h5 {
-    text-align: center;
-    font-size: 42px;
-    margin-top: 10px;
-    color: black;
-    background-color: rgb(248, 246, 243);
-    background: rgba( 255, 255, 255, 0.25 );
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 4px );
--webkit-backdrop-filter: blur( 6px );
-border-radius: 10px;
-border: 1px solid rgba( 255, 255, 255, 0.18 );
-    font-family: Gabriola;
+.background h5 {
+  text-align: center;
+  margin-left: 500px;
+  font-size: 42px;
+  margin-top: 10px;
+  width: 450px;
+  color: black;
+  background-color: rgb(248, 246, 243);
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(6px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  font-family: Gabriola;
 }
-.centered{
-    position: absolute;
-    top: 44%;
-    transform: translateY(-26%);
-}
-
-.problem-child {
-    
-}
-
-
-
-
 
 .table td {
-    color: white;
-    font-size: 18px;
+  color: white;
+  font-size: 18px;
 }
 
-.responsive{
+.responsive {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  font-family: Gabriola;
+  font-size: 40px;
+  padding-top: 20px;
+}
+
+footer a {
+  color: white;
+  font-size: 22px;
+  justify-content: space-between;
+  padding-left: 10px;
+  font-family: Gabriola;
+}
+
+footer a:hover {
+  color: #f7c5cc;
+}
+
+@media (width >= 900px) {
+  .background .table {
     width: 100%;
-    max-width: 100%;
-    height: auto;
+    margin: auto;
+  }
 }
 
-
-footer{
-    background-color: black;
-    color: white;
-    position: relative;
-    bottom: 0;
-    font-family: Gabriola;
-    font-size: 40px;
-    padding-top: 20px;
-}
-
-footer a{
-    color: white;
-    font-size: 22px;
-    justify-content: space-between;
-    padding-left: 10px;
-    font-family: Gabriola;
-}
-
-footer a:hover{
-    color: #F7C5CC;
-}
-
-@media screen and (max-width: 300px) {
-    div.centered{
-        width: 100px;
-        bottom: 0;
+@media (width <= 900px) {
+    .background .table {
+        width: 100%;
+        margin: auto;
     }
-    .centered p {
-        font-size: 20px;
+    .background p {
+        margin: auto;
     }
-    .about-table {
-        height: 300px;
+    .background h5, .background h6 {
+        margin: auto;
     }
-
-}
-
-@media screen and (max-width: 600px){
-    div.centered{
-        font-size: 30px;
-    }
-    
-}
-@media screen and (max-width: 750px){
-    .centered p {
-        font-size: 20px;
-    }
-    .about-table {
-        height: 300px;
-    }
-    
-}
-
-
-
-@media screen and (max-width: 900px){
-    .centered p {
-        font-size: 30px;
-    }
-    .about-table {
-        height: 300px;
+    .background img  {
+        margin: auto;
     }
 }
