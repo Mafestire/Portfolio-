@@ -2,29 +2,25 @@
   margin: 0;
   padding: 0;
 }
-body {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto 1fr auto;
-  min-height: 100vh;
-}
-nav,
-.background,
-footer {
-  grid-column: 1 / 4;
-}
 .background {
-  background: url("../images/flower.jpg") no-repeat center center;
-  background-size: cover;
-  background-position: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, .5fr) ;
+  margin: 0;
+}
+.pic{
+  grid-column: 1/2;
+}
+#me{
+  grid-column: 2 /3;
+ transform: translateY(-30%);
 }
 
 .background img {
   width: 290px;
   height: 65%;
-  border-radius: 20%;
-    margin-left: 590px;
-  transform: translateY(-5%);
+  transform: translateX(160%);
+  border-radius: 20%;  
 }
 
 .background p {
@@ -33,8 +29,6 @@ footer {
   justify-content: center;
   align-items: center;
   width: 450px;
-  margin-top: 10px;
-  margin-left: 500px;
   color: black;
   background-color: rgb(248, 246, 243);
   background: rgba(255, 255, 255, 0.25);
@@ -58,8 +52,7 @@ footer {
 
 .background h6 {
   text-align: center;
-  margin-top: 20px;
-  margin-left: 500px;
+  transform: translateY(-65%);
   color: black;
   width: 450px;
   background-color: rgb(248, 246, 243);
@@ -72,12 +65,13 @@ footer {
   font-family: Gabriola;
   font-size: 46px;
 }
-
+#ab{
+  transform: translateY(15%);
+}
 .background h5 {
   text-align: center;
-  margin-left: 500px;
+  transform: translateY(-130%);
   font-size: 42px;
-  margin-top: 10px;
   width: 450px;
   color: black;
   background-color: rgb(248, 246, 243);
@@ -105,7 +99,7 @@ footer {
   background-color: black;
   color: white;
   font-family: Gabriola;
-  font-size: 40px;
+  font-size: 30px;
   padding-top: 20px;
 }
 
@@ -126,6 +120,23 @@ footer a:hover {
     width: 100%;
     margin: auto;
   }
+}
+
+@media (width >= 300px) {
+  .background .table {
+    width: 100%;
+    margin: auto;
+}
+.background p {
+    margin: auto;
+}
+.background h5, .background h6 {
+    margin: auto;
+}
+.background img  {
+    transform: translateX(-30%) !important;
+    font-size: 20px;
+}
 }
 
 @media (width <= 900px) {

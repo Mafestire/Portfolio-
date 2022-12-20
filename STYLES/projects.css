@@ -3,60 +3,44 @@
     padding: 0;
 }
 
-.responsive{
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-}
-
 .op {
     font-family: Gabriola;
-    font-size: 30px;
+    font-size: 20px;
     margin-left: 50px;
+    height: 10rem;
     position: absolute;
-    transform: translateY(-115%);
+    transform: translateY(60%);
     
+}
+.op p{
+    font-size: 20px;
 }
  .op h1 {
-    font-size: 76px;
-    width: 250px;
-    margin-left: 550px;
+    font-size: 46px;
     color: black;
-    text-align: center;
-    /*background-color: rgb(248, 246, 243)*/;
-    border-radius: 38px;
-background: #e6e5e5;
-box-shadow: inset 16px 16px 26px #bfbebe,
-            inset -16px -16px 26px #ffffff;
-    
+    text-align: center; 
 }
 
-.it img{
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    background-size: cover;
-    position: relative;
-    display: block;
-    height: 750px;
-    width: 1550px;
+.them{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    transform: translateX(0%);
 }
-
-
 
 footer{
     background-color: black;
     color: white;
     position: relative;
     font-family: Gabriola;
-    font-size: 46px;
-    height: 305px;
+    font-size: 20px;
+    height: 220px;
     padding-top: 20px;
+    transform: translateY(350%);
 }
-
 footer a{
     color: white;
-    font-size: 22px;
+    font-size: 18px;
     justify-content: space-between;
     padding-left: 10px;
     font-family: Gabriola;
@@ -66,8 +50,8 @@ footer a:hover{
     color: #F7C5CC;
 }
 
-@media screen and (max-width: 576px) {
+/* @media screen and (max-width: 576px) {
     body {
         background-color: rgb(241, 185, 241);
     }
-}
+} */
